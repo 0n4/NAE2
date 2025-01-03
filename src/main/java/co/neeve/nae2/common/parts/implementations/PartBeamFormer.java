@@ -372,7 +372,7 @@ public class PartBeamFormer extends NAEBasePartState implements IBlockStateListe
 		var opposite = side.getOpposite();
 		var blockSet = new LinkedHashSet<BlockPos>();
 
-		for (var i = 0; i < 32; i++) {
+		for (var i = 0; i < 512; i++) {
 			loc = loc.offset(dir);
 
 			var te = world.getTileEntity(loc);
